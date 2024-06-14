@@ -102,7 +102,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 2rem; /* Add margin between left and right sections */
+  gap: 0; /* Add margin between left and right sections */
 }
 .blog-left-section,
 .blog-right-section {
@@ -140,7 +140,6 @@ nav ul li a {
 
 .popular-blogs-wrapper {
   border-radius: 1rem;
-  padding: 0.5rem;
   margin-left: 0;
 }
 
@@ -151,6 +150,7 @@ nav ul li a {
   background-color: #ecf3f7;
   border-radius: 7px;
   margin: 1rem;
+  margin-left: 0;
   padding: 1rem;
 }
 .popular-blogs p {
