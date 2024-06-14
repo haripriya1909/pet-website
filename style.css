@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  color: #004156;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page15 {
+  height: 100vh;
+  width: 100vw;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+/* nav */
+nav {
+  width: 100vw;
+  font-size: 1.2vw;
+  padding: 1vw 5vw 1vw 1vw;
+  text-align: center;
+  justify-content: end;
+}
+nav ul {
+  list-style: none;
+  gap: 3vw;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Search bar */
+.Welcome-head {
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.Welcome-head span {
+  font-weight: bolder;
+}
+.search-container {
+  position: relative;
+  width: 38rem;
+  margin-top: 1vh;
+}
+.search-input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 10px 50px;
+  font-size: 13px;
+  border: 1px solid #bcd6e3;
+  border-radius: 4rem;
+  outline: none;
+}
+.search-input::placeholder {
+  color: #bcd6e3;
+}
+.search-button {
+  height: 100%;
+  width: 8rem;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 9px 10px;
+  font-size: 12px;
+  border: none;
+  background-color: #004156;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4rem;
+  overflow: hidden;
+}
+.search-button:active {
+  background-color: #004156;
+  transform: translateY(calc(-50% + 2px));
+}
+
+/* blog header section */
+
+.blog a {
+  text-decoration: none;
+}
+.blog img {
+  object-fit: cover;
+}
+.blog-container {
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+}
+.blog-left-section {
+  height: 100%;
+  width: min-content;
+  border-radius: 1rem;
+  background-color: #ecf3f7;
+  align-items: center;
+}
+.blog-left-img {
+  display: flex;
+  height: 25rem;
+  width: 95%;
+  overflow: hidden;
+  border-radius: 1rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+.blog-left-decription p {
+  display: flex;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  justify-content: flex-start;
+}
+.blog-right-section {
+  height: 100%;
+}
+.blog-right-section span {
+  font-weight: bold;
+}
+
+.popular-blogs {
+  width: 25rem;
+  border-radius: 7px;
+  background-color: #ecf3f7;
+  justify-content: center;
+  align-items: center;
+}
+.popular-blogs p {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  max-width: 100%;
+}
+
+.blog-tags span {
+  background-color: #ffff;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 300;
+  color: #689bac;
+}
+.popular-blog-img {
+  overflow: hidden;
+  border-radius: 7px;
+  height: 6.5rem;
+  width: 7.3rem;
+}
+
+/* blog cards section */
+
+/* category button links */
+.category-buttons button {
+  background-color: transparent;
+  border: 1px solid #004156;
+  border-radius: 2.5rem;
+  color: #004156;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+.category-buttons button:hover {
+  background-color: transparent;
+  border: 1px solid #004156;
+}
+
+/* cards */
+
+.blogCard {
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  background-color: #ecf3f7;
+}
+.blog-img {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #ffff;
+}
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.blog-card-description p {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  max-width: 100%;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+
+/* pagination */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  list-style: none;
+}
+.pagination li {
+  margin: 0 0.5rem;
+}
+.pagination li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #004156;
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border: transparent;
+}
+.pagination li a:hover {
+  background-color: #004156;
+  color: #ffff;
+}
+.pagination li a.active {
+  background-color: #004156;
+  color: #ffff;
+}
