@@ -14,8 +14,6 @@ body {
 #main {
   display: flex;
   flex-direction: column;
-}
-#page15 {
   height: 100vh;
   width: 100vw;
 }
@@ -267,6 +265,7 @@ nav ul li a {
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -282,13 +281,13 @@ nav ul li a {
   background-size: cover;
 }
 .form-side {
-  width: 65%;
+  width: 60%;
   padding: 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 h1 {
   margin-top: 0;
@@ -333,31 +332,35 @@ form button {
   text-decoration: none;
 }
 .footer a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #004156;
 }
 .or-line {
+  display: flex;
+  align-items: center;
   text-align: center;
-  margin: 20px 0;
-  position: relative;
+  padding-top: 35px;
 }
+
 .or-line::before,
 .or-line::after {
   content: "";
-  position: absolute;
-  top: 50%;
-  width: 40%;
-  height: 1px;
-  background-color: #004156;
+  flex: 3; /* Increase this value to make the lines longer */
+  border-bottom: 1px solid #bcd6e3;
+  margin: 0 10px; /* Decrease this value to make the lines longer */
 }
+
 .or-line::before {
   left: 0;
 }
+
 .or-line::after {
   right: 0;
 }
 .social-buttons {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
+  padding-top: 35px;
 }
 .social-buttons button {
   width: 200px;
@@ -370,7 +373,6 @@ form button {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  
 }
 .social-buttons button:hover {
   opacity: 0.9;
